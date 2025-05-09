@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; 
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  background-color: #d9d9d9; 
+  padding: 10px;
+}
+
+.header, .footer, .item {
+  background-color: white;     
+  padding: 10px;
+  min-height: 100px;
+}
+
+.header, .footer {
+  grid-column: 1 / -1;
+  text-align: left;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.double {
+  grid-column: span 2;
+}
